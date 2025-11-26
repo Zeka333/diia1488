@@ -1474,3 +1474,72 @@ html, body {
 .passport.passport-copy .content.front > .line.marquee {
     margin-top: 88px !important;  /* регулируй тут: 90–140px */
 }
+
+/* === АДАПТАЦИЯ ПОД IPHONE 13 (и 12/14/15) === */
+@media (max-width: 430px) {
+
+  /* Страница скроллится, ничего не обрезается */
+  html, body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  /* Контейнер свайпера — на ширину экрана */
+  .swiper-container {
+    width: 100% !important;
+    padding: 0 14px;               /* аккуратные поля */
+    margin-top: 18px;              /* чтобы не прилипало */
+    margin-bottom: 100px;          /* под нижнее меню */
+    box-sizing: border-box;
+  }
+
+  /* Слайд — на всю ширину доступного места */
+  .swiper-slide {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* КАРТОЧКА — СТРОГО В ОРИГИНАЛЬНЫХ ПРОПОРЦИЯХ */
+  .content {
+    width: 335px !important;       /* оригинальная ширина Дії */
+    height: 460px !important;      /* оригинальная высота */
+    max-width: 90vw;               /* защита чтобы не вылезло за экран */
+    max-height: 115vw;             /* масштабируется пропорционально */
+    transform: scale(0.92);        /* идеально под iPhone 13 */
+    transform-origin: top center;
+    margin: 0 auto !important;
+  }
+
+  /* ШАПКА */
+  .header {
+    padding-top: 10px;
+    padding-bottom: 8px;
+  }
+
+  /* Нижнее меню — фиксированное */
+  .footer,
+  .menulid > .footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  /* Иконки меню — компактнее */
+  .footer .icon span,
+  .footer .icon > div {
+    font-size: 12px;
+    transform: scale(0.95);
+  }
+
+  /* Контент не прячется под меню */
+  .mainpage {
+    padding-bottom: 110px;
+  }
+}
+
