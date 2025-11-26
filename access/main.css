@@ -1475,10 +1475,9 @@ html, body {
     margin-top: 88px !important;  /* регулируй тут: 90–140px */
 }
 
-/* Лёгкая адаптация под телефоны (в т.ч. iPhone 13) */
-@media (max-width: 430px) {
+/* Лёгкая адаптация под телефоны (чтобы не резало экран) */
+@media (max-width: 480px) {
 
-  /* Страница может скроллиться вертикально */
   html, body {
     width: 100%;
     height: auto;
@@ -1487,32 +1486,30 @@ html, body {
     overflow-y: auto;
   }
 
-  /* Контейнер свайпера на всю ширину экрана */
+  /* Контейнер свайпера — на всю ширину, но без диких отступов */
   .swiper-container {
     width: 100% !important;
-    padding: 0 10px;
+    padding: 0;
+    margin: 10px auto 90px auto; /* отступ сверху и под нижнее меню */
     box-sizing: border-box;
-    margin-bottom: 90px;   /* место под нижнюю менюшку */
   }
 
-  /* Каждый слайд растягиваем на ширину контейнера и центрируем */
+  /* Слайд центрирует карточку */
   .swiper-slide {
-    width: 100% !important;
+    width: auto !important;
     display: flex;
     justify-content: center;
   }
 
-  /* Карточка:
-     — остаётся как в оригинале (335px),
-     — просто не даём ей вылезти за экран */
+  /* Карточка: ровно как в Дії, чуть поджата */
   .content {
-    max-width: 335px;
-    width: 100%;
-    margin: 0 auto !important;
-    /* НИЧЕГО не трогаем: ни height, ни transform! */
+    width: 335px !important;
+    max-width: 335px !important;
+    transform: scale(0.92);
+    transform-origin: top center;
   }
 
-  /* Нижняя панель фиксируется снизу */
+  /* Нижняя менюшка фиксированно внизу */
   .footer,
   .menulid > .footer {
     position: fixed;
@@ -1521,7 +1518,7 @@ html, body {
     bottom: 0;
   }
 
-  /* Чтобы контент не оказался под нижней панелью */
+  /* Чтобы контент не уезжал под нижнюю панель */
   .mainpage {
     padding-bottom: 100px;
   }
