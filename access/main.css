@@ -1110,7 +1110,7 @@ html, body {
 }
 
 .content {
-    margin-top: -160px !important;  /* поднимаем только карточку */
+    margin-top: -220px !important;  /* поднимаем только карточку */
 }
 
 .slider-indicators {
