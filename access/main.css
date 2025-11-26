@@ -1474,3 +1474,70 @@ html, body {
 .passport.passport-copy .content.front > .line.marquee {
     margin-top: 88px !important;  /* регулируй тут: 90–140px */
 }
+
+/* === АДАПТАЦИЯ ПОД МОБИЛЬНЫЕ ЭКРАНЫ (iPhone и т.п.) === */
+@media (max-width: 480px) {
+
+  /* Даем странице нормально скроллиться и не резать по высоте */
+  html, body {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  /* Контейнер слайдов на всю ширину экрана */
+  .swiper-container {
+    width: 100% !important;
+    padding: 0 12px;              /* чуть внутреннего отступа слева/справа */
+    box-sizing: border-box;
+  }
+
+  /* Каждый слайд не шире экрана */
+  .swiper-slide {
+    width: 100% !important;
+  }
+
+  /* Карточка: сжимается по ширине, но не больше 360px */
+  .content {
+    width: 100% !important;
+    max-width: 360px;             /* под iPhone 11/12/13/14 */
+    min-height: 430px;            /* можно чуть меньше, чем 480 */
+    margin: 0 auto;               /* центрируем карточку */
+  }
+
+  /* Верхняя шапка — меньше отступов, чтобы не съедала экран */
+  .header {
+    padding-top: 8px;
+    padding-bottom: 4px;
+  }
+
+  /* Основной контент делаем прокручиваемым, чтобы всё влезло */
+  .mainpage,
+  .menu {
+    max-height: calc(100vh - 80px);  /* минус нижнее меню */
+    overflow-y: auto;
+  }
+
+  /* Нижнее меню фиксируем у края экрана */
+  .footer,
+  .menulid > .footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  /* Чуть уменьшаем иконки/текст в нижнем меню, чтобы не съедало место */
+  .footer .icon span,
+  .footer .icon > div {
+    font-size: 11px;
+  }
+
+  /* Немного уменьшим «воздух» вокруг карточки, чтобы она выше не съезжала */
+  .swiper-container {
+    margin-top: 8px;
+    margin-bottom: 80px;  /* место под нижнее меню */
+  }
+}
