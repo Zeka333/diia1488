@@ -1475,10 +1475,10 @@ html, body {
     margin-top: 88px !important;  /* регулируй тут: 90–140px */
 }
 
-/* === АДАПТАЦИЯ ПОД IPHONE 13 (и 12/14/15) === */
+/* Лёгкая адаптация под телефоны (в т.ч. iPhone 13) */
 @media (max-width: 430px) {
 
-  /* Страница скроллится, ничего не обрезается */
+  /* Страница может скроллиться вертикально */
   html, body {
     width: 100%;
     height: auto;
@@ -1487,59 +1487,43 @@ html, body {
     overflow-y: auto;
   }
 
-  /* Контейнер свайпера — на ширину экрана */
+  /* Контейнер свайпера на всю ширину экрана */
   .swiper-container {
     width: 100% !important;
-    padding: 0 14px;               /* аккуратные поля */
-    margin-top: 18px;              /* чтобы не прилипало */
-    margin-bottom: 100px;          /* под нижнее меню */
+    padding: 0 10px;
     box-sizing: border-box;
+    margin-bottom: 90px;   /* место под нижнюю менюшку */
   }
 
-  /* Слайд — на всю ширину доступного места */
+  /* Каждый слайд растягиваем на ширину контейнера и центрируем */
   .swiper-slide {
     width: 100% !important;
     display: flex;
     justify-content: center;
   }
 
-  /* КАРТОЧКА — СТРОГО В ОРИГИНАЛЬНЫХ ПРОПОРЦИЯХ */
+  /* Карточка:
+     — остаётся как в оригинале (335px),
+     — просто не даём ей вылезти за экран */
   .content {
-    width: 335px !important;       /* оригинальная ширина Дії */
-    height: 460px !important;      /* оригинальная высота */
-    max-width: 90vw;               /* защита чтобы не вылезло за экран */
-    max-height: 115vw;             /* масштабируется пропорционально */
-    transform: scale(0.92);        /* идеально под iPhone 13 */
-    transform-origin: top center;
+    max-width: 335px;
+    width: 100%;
     margin: 0 auto !important;
+    /* НИЧЕГО не трогаем: ни height, ни transform! */
   }
 
-  /* ШАПКА */
-  .header {
-    padding-top: 10px;
-    padding-bottom: 8px;
-  }
-
-  /* Нижнее меню — фиксированное */
+  /* Нижняя панель фиксируется снизу */
   .footer,
   .menulid > .footer {
     position: fixed;
     left: 0;
     right: 0;
     bottom: 0;
-    padding-bottom: env(safe-area-inset-bottom);
   }
 
-  /* Иконки меню — компактнее */
-  .footer .icon span,
-  .footer .icon > div {
-    font-size: 12px;
-    transform: scale(0.95);
-  }
-
-  /* Контент не прячется под меню */
+  /* Чтобы контент не оказался под нижней панелью */
   .mainpage {
-    padding-bottom: 110px;
+    padding-bottom: 100px;
   }
 }
 
