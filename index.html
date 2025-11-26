@@ -1,0 +1,761 @@
+<script> var user = 0; </script>
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="apple-mobile-web-app-capable" content="yes">
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
+      <link rel="icon" type="image/png" href="access/favicon.png">
+      <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+      <link rel="apple-touch-icon-precomposed" href="access/favicon.png" />
+      <!--[if IE]><link rel="icon" href="access/favicon.ico"><![endif]-->
+      <link rel="manifest" href="/manifest.json">
+      <meta name="apple-mobile-web-app-title" content="Дія">
+      <link rel="stylesheet" href="access/main.css?662250" type="text/css">
+      <link rel="stylesheet" href="access/pro.min.css?662250" type="text/css">
+      <title>Дія</title>
+   </head>
+   <body>
+<div id="diia-bg"></div>
+      <div class="loadpage">
+         <div style="display:none" class="diyalogo"></div>
+         <div style="display:none" class="zublogo"></div>
+         <div style="display:none" class="loadtext">Міністерство<br>цифрової трансформації<br>України</div>
+      </div>
+<div class="loginpage"
+     style="display:none;
+            background: url('access/bg.png') center/cover no-repeat;
+            min-height: 100vh;">
+         <div class="login_title">Код для входу</div>
+
+         <div class="keyboard">
+           <div class="cricles">
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+              <div class="dot"></div>
+           </div>
+            <div class="key r25">
+               <span>1</span>
+            </div>
+            <div class="key r25">
+               <span>2</span>
+            </div>
+            <div class="key">
+               <span>3</span>
+            </div>
+            <div class="key r25 t10">
+               <span>4</span>
+            </div>
+            <div class="key r25 t10">
+               <span>5</span>
+            </div>
+            <div class="key t10">
+               <span>6</span>
+            </div>
+            <div class="key r25 t10">
+               <span>7</span>
+            </div>
+            <div class="key r25 t10">
+               <span>8</span>
+            </div>
+            <div class="key t10">
+               <span>9</span>
+            </div>
+            <div class="key eblo r25 t10">
+               <span>1 </span>
+            </div>
+            <div class="key r25 t10">
+               <span>0</span>
+            </div>
+            <div class="key krest t10">
+               <span>-</span>
+            </div>
+         </div>
+         <div class="login_footer">Не пам'ятаю код для входу</div>
+      </div>
+      <div class="menulid"  style="display: none">
+         <div class="header">
+            <div class="logos">
+               <div class="diya">
+                  <div class="pathtitle menutitile">Вітаємо, Твои</div>
+               </div>
+               <div class="scanqr"></div>
+            </div>
+         </div>
+         <div class="mainpage">
+            <div class="menu" data-scroll-lock-scrollable>
+               <div class="menulist sos">
+                  <span>
+                     <div></div>
+                     Дія.Підпис
+                  </span>
+               </div>
+               <div class="zaz menulist sos">
+                  <span>
+                     <div></div>
+                     Підключені пристрої
+                  </span>
+               </div>
+               <div class="menulist sos">
+                  <span>
+                     <div></div>
+                     Функції та підказки
+                  </span>
+               </div>
+               <div class="menulist sos">
+                  <span>
+                     <div></div>
+                     Питання та відповіді
+                  </span>
+               </div>
+               <div class="zaz menulist sos">
+                  <span>
+                     <div></div>
+                     Служба підтримки
+                  </span>
+               </div>
+               <div class="menulist sos">
+                  <span>
+                     <div></div>
+                     Копіювати номер пристрою
+                  </span>
+               </div>
+               <div class="zaz menulist sos">
+                  <span>
+                     <div></div>
+                     Налаштування
+                  </span>
+               </div>
+               <div class="menulist sos">
+                  <span>
+                     <div></div>
+                     Про Дію
+                  </span>
+               </div>
+               <div class="menulist sos">
+                  <span>
+                     <div></div>
+                     Розповісти друзям
+                  </span>
+               </div>
+               <div class="zaz menulist sos">
+                  <span>
+                     <div></div>
+                     Оцінити застосунок
+                  </span>
+               </div>
+               <div class="menulist sos">
+                  <span>
+                     <div></div>
+                     Вийти
+                  </span>
+               </div>
+            </div>
+         </div>
+         <div class="footer zep">
+            <div class="ft_icons">
+               <div class="icon doc">
+                  <div class="ico"></div>
+                  Документи
+               </div>
+               <div class="icon pos">
+                  <div class="ico"></div>
+                  Послуги
+               </div>
+               <div class="icon pov">
+                  <div class="ico"></div>
+                  Повідомлення
+               </div>
+               <div class="icon men act">
+                  <div class="ico"></div>
+                  Меню
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="poslugi" style="display: none">
+         <div class="header">
+            <div class="logos">
+               <div class="diya">
+                  <div class="pathtitle">Послуги</div>
+               </div>
+               <div class="scanqr"></div>
+            </div>
+         </div>
+         <div class="mainpage">
+            <div class="menu" data-scroll-lock-scrollable>
+               <div class="menulist">
+                  <span>Виконавчі провадження</span>
+                  <div class="arrow"></div>
+               </div>
+               <div class="menulist">
+                  <span>Штрафи за порушення ПДР</span>
+                  <div class="arrow"></div>
+               </div>
+               <div class="menulist">
+                  <span>COVID-сертифікати</span>
+                  <div class="arrow"></div>
+               </div>
+               <div class="menulist">
+                  <span>Одноразова допомога ФОПам та найманим працівникам</span>
+                  <div class="arrow"></div>
+               </div>
+               <div class="menulist">
+                  <span>Заміна посвідчення водія</span>
+                  <div class="arrow"></div>
+               </div>
+               <div class="menulist">
+                  <span>Петиції</span>
+                  <div class="arrow"></div>
+               </div>
+               <div class="menulist">
+                  <span>Сплата послуг за QR-кодом</span>
+                  <div class="arrow"></div>
+               </div>
+               <div class="menulist">
+                  <span>Реєстрація місця проживання</span>
+                  <div class="arrow"></div>
+               </div>
+               <div class="menulist">
+                  <span>Податкові послуги</span>
+                  <div class="arrow"></div>
+               </div>
+            </div>
+         </div>
+         <div class="footer zep">
+            <div class="ft_icons">
+               <div class="icon doc">
+                  <div class="ico"></div>
+                  Документи
+               </div>
+               <div class="icon pos">
+                  <div class="ico"></div>
+                  Послуги
+               </div>
+               <div class="icon pov act">
+                  <div class="ico"></div>
+                  Повідомлення
+               </div>
+               <div class="icon men">
+                  <div class="ico"></div>
+                  Меню
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="notifications" style="display: none">
+         <div class="header">
+            <div class="logos">
+               <div class="diya">
+                  <div class="pathtitle">Повідомлення</div>
+               </div>
+            </div>
+         </div>
+         <div class="mainpage">
+            <div class="ok">
+               <div class="okimg"></div>
+               У вас немає нових повідомлень.
+            </div>
+         </div>
+         <div class="footer zep">
+            <div class="ft_icons">
+               <div class="icon doc">
+                  <div class="ico"></div>
+                  Документи
+               </div>
+               <div class="icon pos">
+                  <div class="ico"></div>
+                  Послуги
+               </div>
+               <div class="icon pov act">
+                  <div class="ico"></div>
+                  Повідомлення
+               </div>
+               <div class="icon men">
+                  <div class="ico"></div>
+                  Меню
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="mainpage papage" style="opacity: 0">
+         <div class="header">
+            <div class="logos">
+               <div class="diya"></div>
+               <div class="scanqr"></div>
+            </div>
+         </div>
+         <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+<!-- 🔥 єДокумент -->
+<div class="swiper-slide passport passport-copy"
+     onclick="this.classList.toggle('is-flipped');">
+   <div class="content front">
+      <div class="ps_title">
+         <div class="glav">єДокумент</div>
+         <div class="gerb"></div>
+      </div>
+
+      <div class="information">
+         <div class="image" style="background-image: url(photo.jpg);"></div>
+         <div class="info">
+            <div class="opis">
+               <div class="date birthdate">Дата народження: 08.12.1488</div>
+               <div class="number kpp_id">РНОКПП: 3924202973</div>
+            </div>
+         </div>
+      </div>
+
+      <div class="line marquee">
+         Документ діє під час воєнного стану. Ой у лузі червона калина похилилася, Чогось наша славна Україна зажурилася. А ми тую червону калину підіймемо, А ми нашу славну Україну, гей, гей, розвеселимо!
+      </div>
+      <div class="name fullname">Тут Твои Данные</div>
+      <div class="more"></div>
+   </div>
+
+<div class="content back">
+    <div class="qr_image_copy" style="
+        width:240px;
+        height:240px;
+        background-image:url('access/qr/edoc_qr.png');
+        background-size:contain;
+        background-repeat:no-repeat;
+        background-position:center;
+        margin-top:120px;
+    "></div>
+   </div>
+</div>
+
+               <div class="swiper-slide passport pssprt">
+                  <div class="content front">
+                     <div class="ps_title">
+                        <div class="glav">Паспорт громадянина<br>України</div>
+                        <div class="gerb"></div>
+                     </div>
+                     <div class="information">
+                        <div class="image" style="background-image: url(photo.jpg);"></div>
+                        <div class="info">
+                           <div class="opis">
+                              <div class="date birthdate">Дата народження: 08.12.1488</div>
+                              <div class="number passport_id">Номер: 008759371</div>
+                              <div style="background-image: url(sign.png);margin-left: -7px;" class="sign"></div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="line marquee">
+    Документ оновлено о 13:36 | 18.11.2025 • 
+</div>
+                     <div class="name fullname">Тут Твои Данные</div>
+                     <div class="more"></div>
+                  </div>
+                  <div class="content back">
+                     <div class="loaded qr p" style="opacity:0">
+                        <div class="qr_body">
+                           <div class="qr_title timer_qr">Код діятиме ще 3:00 хв</div>
+                           <div class="qrcode"></div>
+                        </div>
+                        <div class="qrbuttons">
+                           <div class="pqricon act"></div>
+                           <div class="pshicon"></div>
+                        </div>
+                     </div>
+                      <div class="loaded sh p" style="display: none">
+                        <div class="qr_body">
+                          <div class="qr_title timer_qr">Код діятиме ще 3:00 хв</div>
+                          <div class="shcode"></div>
+                          <div class="qr_title t">1977341148475</div>
+                        </div>
+                        <div class="qrbuttons">
+                        <div class="pqricon"></div>
+                        <div class="pshicon act"></div>
+                        </div>
+                      </div>
+                     <div class="unloaded">
+                        <div class="loader_line"></div>
+                        <div class="glav">Паспорт громадянина<br>України</div>
+                        <div class="qr_title">Завантаження...</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="swiper-slide passport nlgi">
+                  <div class="platnik content front">
+                     <div class="ps_title">
+                        <div class="glav">Картка платника податків</div>
+                     </div>
+                     <div class="ps_deskr">
+                        <div class="deskr">PHOKПП</div>
+                     </div>
+                     <div class="name fullname">Тут Твои Данные</div>
+                     <div class="date birthdate">Дата народження: 08.12.1488</div>
+                     <div class="line marquee">РНОКПП дійсний. Перевірено Державною податковою службою. 
+		</div>
+                     <div class="number kpp_id">3805401387</div>
+                     <div class="copy"></div>
+                  </div>
+                  <div class="content back">
+                    <div class="loaded qr n" style="opacity:0">
+                       <div class="qr_body">
+                          <div class="qr_title timer_qr">Код діятиме ще 3:00 хв</div>
+                          <div class="qrcode"></div>
+                       </div>
+                       <div class="qrbuttons">
+                          <div class="nqricon act"></div>
+                          <div class="nshicon"></div>
+                       </div>
+                    </div>
+                     <div class="loaded sh n" style="display: none">
+                       <div class="qr_body">
+                         <div class="qr_title timer_qr">Код діятиме ще 3:00 хв</div>
+                         <div class="shcode"></div>
+                         <div class="qr_title t">1977341148475</div>
+                       </div>
+                       <div class="qrbuttons">
+                       <div class="nqricon"></div>
+                       <div class="nshicon act"></div>
+                       </div>
+                     </div>
+                     <div class="unloaded">
+                        <div class="loader_line"></div>
+                        <div class="glav">Картка платника податкiв</div>
+                        <div class="qr_title">Завантаження...</div>
+                     </div>
+                  </div>
+               </div>
+                                <div class="swiper-slide passport prava">
+                    <div class="content front">
+                       <div class="ps_title">
+                          <div class="glav">Посвiдчення<br>водiя</div>
+                       </div>
+                       <div class="information" style="justify-content: space-between;">
+                          <div class="info" style="margin: 0;">
+                             <div class="opis" style="margin-top: -2px;width: 184px;">
+                                <div class="date fullname" style="max-width: 1px;">Тут Твои Данные</div>
+                                <div class="number birthdate" style="">Дата народження: 00.00.0000</div>
+                                <div class="number rights_categories">Категорії: A, B</div>
+                                <div class="number rights_valid_until">Дійсне до: 01.01.2022</div>
+                            </div>
+                       </div>
+                       <div class="image" style="float: right;width: 115px;height: 155px;background-image: url(photo_rights.jpg);"></div>
+                     </div>
+                       <div class="razdel"></div>
+                       <div class="number rights_tsc" style="margin: 16px;font-size: 14px;width: 79px;">Видав: ТСЦ 8631</div>
+                       <div class="name rights_id" style="margin-top: 61px;">KBE968639</div>
+                       <div class="more"></div>
+                    </div>
+                    <div class="content back">
+                       <div class="loaded qr v" style="opacity:0">
+                          <div class="qr_body">
+                             <div class="qr_title timer_qr">Код діятиме ще 3:00 хв</div>
+                             <div class="qrcode"></div>
+                          </div>
+                          <div class="qrbuttons">
+                             <div class="vqricon act"></div>
+                             <div class="vshicon"></div>
+                          </div>
+                       </div>
+                        <div class="loaded sh v" style="display: none">
+                          <div class="qr_body">
+                            <div class="qr_title timer_qr">Код діятиме ще 3:00 хв</div>
+                            <div class="shcode"></div>
+                            <div class="qr_title t">1977341148475</div>
+                          </div>
+                          <div class="qrbuttons">
+                          <div class="vqricon"></div>
+                          <div class="vshicon act"></div>
+                          </div>
+                        </div>
+                       <div class="unloaded">
+                          <div class="loader_line"></div>
+                          <div class="glav">Посвідчення<br>водія</div>
+                          <div class="qr_title">Завантаження...</div>
+                       </div>
+                    </div>
+                 </div>
+                                               <div class="swiper-slide passport covid">
+                    <div class="content front">
+                       <div class="ps_title">
+                          <div class="glav">Внутрішній<br>COVID19-сертифікат</div>
+                       </div>
+                       <div class="information">
+                          <div class="image" style="background-image: url(photo.jpg);"></div>
+                          <div class="info" style="margin-left: 13px;">
+                             <div class="opis" style="margin-top: -2px; width: 126px;">
+                                <div class="date birthdate">Дата народження: 08.12.1488</div>
+                                <div class="number covid_valid_until">Дійсний до: 11.03.2022</div>
+                                <div class="number covid_certificate_id">Номер сертiфiкату: URN:UVCI:01:UA:0<br>E55669376876888<br>B9E2520C4F88930</div></div>
+                          </div>
+                       </div>
+                       <div class="razdel"></div>
+                       <div class="name fullname">Тут Твои Данные</div>
+                       <div class="more"></div>
+                    </div>
+                    <div class="content back">
+                       <div class="loaded qr c" style="opacity:0">
+                          <div class="qr_body">
+                             <div class="qr_title timer_qr">Код діятиме ще 3:00 хв</div>
+                             <div class="qrcode" style="background-image: url(https://i.imgur.com/gFVTe9t.png);"></div>
+                          </div>
+                          <div class="qrbuttons">
+                             <div class="cqricon act"></div>
+                             <div class="cshicon"></div>
+                          </div>
+                       </div>
+                        <div class="loaded sh c" style="display: none">
+                          <div class="qr_body">
+                            <div class="qr_title timer_qr">Код діятиме ще 3:00 хв</div>
+                            <div class="shcode"></div>
+                            <div class="qr_title t">1977341148475</div>
+                          </div>
+                          <div class="qrbuttons">
+                          <div class="cqricon"></div>
+                          <div class="cshicon act"></div>
+                          </div>
+                        </div>
+                       <div class="unloaded">
+                          <div class="loader_line"></div>
+                          <div class="glav">Внутрішній<br>COVID19-сертифікат</div>
+                          <div class="qr_title">Завантаження...</div>
+                       </div>
+                    </div>
+                 </div>
+                            <div class="swiper-slide passport svdtstv">
+                 <div class="content front">
+                    <div class="ps_title">
+                       <div class="rodi">Додати свідоцтво про народження дитини</div>
+                    </div>
+                    <div class="ps_deskr">
+                       <div class="rod_deskr">Зараз ви можете додати до документiв у Дії свiдоцтво про народження своєї дитини. Для цього потрібні серія та номер свідоцтва.</div>
+                    </div>
+                    <div class="ps_deskr">
+                       <div class="rod_deskr">Інші документи наразі додати неможливо.</div>
+                    </div>
+                    <div class="rod_but">
+                       <span>Додати</span>
+                    </div>
+                 </div>
+                 <div class="content back">
+                    <div class="loaded" style="opacity:0">
+                       <div class="qr_body">
+                          <div class="qr_title timer_qr">Код діятиме ще 3:00 хв</div>
+                          <div class="qrcode"></div>
+                       </div>
+                       <div class="qrbuttons">
+                          <div class="qricon act"></div>
+                          <div class="shicon"></div>
+                       </div>
+                    </div>
+                    <div class="unloaded">
+                       <div class="loader_line"></div>
+                       <div class="glav">Паспорт громадянина<br>України</div>
+                       <div class="qr_title">Завантаження...</div>
+                    </div>
+                 </div>
+              </div>
+            </div>
+         </div>
+         <div class="refresh">
+            <div class="rf_title" style="display:none"></div>
+            <div class="doba" style="width: 40px;">
+               <div class="dit_dot act"></div>
+               <div class="dit_dot"></div>
+	       <div class="dit_dot"></div>
+               <div class="dit_dot"></div>           
+            </div>
+         </div>
+         <div class="footer">
+            <div class="ft_icons">
+               <div class="icon doc act">
+                  <div class="ico"></div>
+                  Документи
+               </div>
+               <div class="icon pos">
+                  <div class="ico"></div>
+                  Послуги
+               </div>
+               <div class="icon pov">
+                  <div class="ico"></div>
+                  Повiдомлення
+               </div>
+               <div class="icon men">
+                  <div class="ico"></div>
+                  Меню
+               </div>
+            </div>
+         </div>
+      </div>
+
+      <link rel="stylesheet" href="access/swiper-bundle.css?662250" />
+      <link rel="stylesheet" href="access/swiper-bundle.min.css?662250" />
+      <script src="access/values.js?662250"></script>
+      <script>
+      	if(isRightsEnabled) {
+      		document.getElementsByClassName("doba")[0].innerHTML += "<div class=\"dit_dot\"><\/div>";
+      	}
+      	if(isCovidCertificateEnabled) {
+      		document.getElementsByClassName("doba")[0].innerHTML += "<div class=\"dit_dot\"><\/div>";
+      	}
+      	if(!isRightsEnabled) {
+      		document.getElementsByClassName("prava")[0].remove();
+      	}
+      	if(!isCovidCertificateEnabled){
+      		document.getElementsByClassName("covid")[0].remove();
+      	}
+      </script>
+      <script src="access/swiper-bundle.js?662250"></script>
+      <script src="access/swiper-bundle.min.js?662250"></script>
+      <script src="access/jquery.min.js?662250"></script>
+      <script src="access/anime.js?662250"></script>
+      <script src="access/scroll-lock.js?662250"></script>
+      <script src="access/jquery.marquee.min.js?662250" type="text/javascript"></script>
+      <script src="access/main.js?662250"></script>
+      <script src="access/fill.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* === РНОКПП (работает у тебя уже) === */
+  if (typeof kpp_id !== 'undefined') {
+    var edocKpp = document.querySelector('.passport-copy .number.kpp_id');
+    if (edocKpp) {
+      edocKpp.textContent = 'РНОКПП: ' + kpp_id;
+    }
+  }
+
+  /* === Дата рождения (новое) === */
+  if (typeof birthdate !== 'undefined') {
+    var edocBirth = document.querySelector('.passport-copy .date.birthdate');
+    if (edocBirth) {
+      edocBirth.textContent = 'Дата народження: ' + birthdate;
+    }
+  }
+
+});
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  // kpp_id берётся из values.js
+  if (typeof kpp_id !== 'undefined') {
+    // именно єДокумент: слайд .passport-copy
+    var edocNumber = document.querySelector('.passport-copy .number.kpp_id');
+    if (edocNumber) {
+      edocNumber.textContent = 'РНОКПП: ' + kpp_id;
+    }
+  }
+});
+</script>
+
+<script>
+(function () {
+    function pad(n) {
+        return n < 10 ? '0' + n : n;
+    }
+
+    var now  = new Date();
+    var time = pad(now.getHours()) + ':' + pad(now.getMinutes());
+    var date = pad(now.getDate()) + '.' + (now.getMonth() + 1) + '.' + now.getFullYear();
+
+    // БЕРЁМ ТОЛЬКО ЛИНИЮ НА ПАСПОРТЕ, платник не трогаем
+    var lines = document.querySelectorAll('.swiper-slide.passport.pssprt .content.front .line.marquee');
+
+    lines.forEach(function (el) {
+        el.textContent = 'Документ оновлено о ' + time + ' | ' + date + ' • ';
+        //                                                          ^ один пробел
+    });
+})();
+</script>
+
+      <script src="access/lottie.min.js"></script>
+      <script>
+         document.addEventListener('DOMContentLoaded', function () {
+            if (window.lottie && document.getElementById('diia-bg')) {
+               lottie.loadAnimation({
+                  container: document.getElementById('diia-bg'),
+                  renderer: 'svg',
+                  loop: true,
+                  autoplay: true,
+                  path: 'access/bg/diia_gradient_bg.json'
+               });
+            }
+         });
+      </script>
+
+<script>
+  // Один таймер на одну заднюю сторону карточки (.content.back)
+  window.startTimerForCard = function (cardBack) {
+    if (!cardBack) return;
+
+    var TIMER_DURATION = 3 * 60; // 3 хв
+    var left = TIMER_DURATION;
+
+    // если уже был таймер у этой карточки — гасим
+    if (cardBack._timerId) {
+      clearInterval(cardBack._timerId);
+    }
+
+    // все заголовки таймера внутри этой карты (и QR, и штрих)
+    var titles = cardBack.querySelectorAll('.timer_qr');
+    if (!titles.length) return;
+
+    function format(sec) {
+      var m = Math.floor(sec / 60);
+      var s = sec % 60;
+      return m + ':' + (s < 10 ? '0' + s : s);
+    }
+
+    function render() {
+      var txt = 'Код діятиме ще ' + format(left) + ' хв';
+      titles.forEach(function (t) {
+        t.textContent = txt;
+      });
+    }
+
+    render(); // сразу показать 3:00
+
+    cardBack._timerId = setInterval(function () {
+      left--;
+      if (left < 0) {
+        left = TIMER_DURATION;
+        // тут по желанию можно обновлять QR/штрих-код
+      }
+      render();
+    }, 1000);
+  };
+</script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+
+  /* === РНОКПП === */
+  if (typeof kpp_id !== 'undefined') {
+    var edocKpp = document.querySelector('.passport-copy .number.kpp_id');
+    if (edocKpp) {
+      edocKpp.textContent = 'РНОКПП: ' + kpp_id;
+    }
+  }
+
+  /* === Дата народження === */
+  if (typeof birthdate !== 'undefined') {
+    var edocBirth = document.querySelector('.passport-copy .date.birthdate');
+    if (edocBirth) {
+      edocBirth.textContent = 'Дата народження: ' + birthdate;
+    }
+  }
+
+  /* === ФІО === */
+  if (typeof fullname !== 'undefined') {
+    var edocFullName = document.querySelector('.passport-copy .name.fullname');
+    if (edocFullName) {
+      edocFullName.textContent = fullname;
+    }
+  }
+
+});
+</script>
+
+   </body>
+
+</html>
