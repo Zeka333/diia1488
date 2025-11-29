@@ -1461,7 +1461,7 @@ html, body {
 
 /* Зелёная линия прижимается вниз */
 .passport-copy .line.marquee {
-    margin-top: auto !important;
+    margin-top: 88 !important;
 }
 
 /* ФИО под линией */
@@ -1480,9 +1480,4 @@ html, body {
 .platnik .line,
 .passport-copy .line {
     margin-top: 20px !important;   /* ставь сколько нужно: 10px / 15px / 20px */
-}
-
-/* Поднять зелёную линию именно у єДокумента */
-.passport-copy .content.front > .line.marquee {
-    margin-top: 25px !important;  /* подбери: 30 / 40 / 50 px */
 }
