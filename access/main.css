@@ -1037,7 +1037,7 @@ html, body {
     padding: 8px 0 10px !important;  /* Отступи для висоти ~55px */
     border-top: 1px solid #c8d4e0;  /* Границя зверху */
     z-index: 50 !important;  /* Над іншими елементами */
-    height: 65px !important;  /* Висота панелі */
+    height: 55px !important;  /* Висота панелі */
     /* Safe-area для iPhone */
     padding-bottom: calc(10px + env(safe-area-inset-bottom)) !important;
     padding-bottom: calc(10px + constant(safe-area-inset-bottom)) !important;
