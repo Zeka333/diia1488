@@ -775,7 +775,7 @@ i.far {
 /* на паспорте полоску опускаем ниже */
 .passport .content.front > .line {
     background: linear-gradient(90deg, #B6EB9F, #9CCFCF);
-    margin: 80px 0 0 0;   /* было 53px, стало ниже */
+    margin: 65px 0 0 0;   /* было 53px, стало ниже */
     position: relative;
     overflow: hidden;
     font-size: 16px
@@ -1467,7 +1467,7 @@ html, body {
 /* ФИО под линией */
 .passport-copy .name.fullname {
     margin-top: 5px !important;
-    margin-bottom: 10px !important;
+    margin-bottom: 20px !important;
 }
 
 /* Опустить линию у єДокумента ниже, чем у паспорта */
