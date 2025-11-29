@@ -1485,3 +1485,10 @@ html, body {
 .passport .passport-copy .content.front > .line.marquee {
     margin-top: 40px !important;  /* было 88px — стало намного выше */
 }
+
+/* ОДИНАКОВЫЙ РАЗМЕР ДЛЯ ВСЕХ КАРТОЧЕК */
+.swiper-slide .content {
+    width: 300px !important;      /* можешь поставить 335, если хочешь шире */
+    height: 430px !important;     /* общая высота */
+    min-height: 430px !important; /* чтобы не прыгало от содержимого */
+}
