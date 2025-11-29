@@ -756,6 +756,32 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 </script>
 
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  if (typeof kpp_id !== 'undefined') {
+
+    /* === ЄДокумент === */
+    var edoc = document.querySelector('.passport-copy .number.kpp_id');
+    if (edoc) {
+      edoc.textContent = 'РНОКПП: ' + kpp_id;
+    }
+
+    /* === Платник податків === */
+    var platnik = document.querySelector('.platnik.content.front .number.kpp_id');
+    if (platnik) {
+      platnik.textContent = kpp_id;  // только номер!
+    }
+
+    /* === Запасной вариант (если класс слегка отличается) === */
+    if (!platnik) {
+      var alt = document.querySelector('.nlgi .number.kpp_id');
+      if (alt) alt.textContent = kpp_id;
+    }
+
+  }
+});
+</script>
+
    </body>
 
 </html>
