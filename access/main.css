@@ -1471,7 +1471,7 @@ html, body {
 }
 
 /* Опустить линию у єДокумента ниже, чем у паспорта */
-.passport.passport-copy .content.front > .line.marquee {
+.passport. passport-copy .content.front > .line.marquee {
     margin-top: 88px !important;  /* регулируй тут: 90–140px */
 }
 
@@ -1482,6 +1482,6 @@ html, body {
 }
 
 /* Поднять зелёную линию у єДокумента */
-.passport.passport-copy .content.front > .line.marquee {
+.passport .passport-copy .content.front > .line.marquee {
     margin-top: 40px !important;  /* было 88px — стало намного выше */
 }
