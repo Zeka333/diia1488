@@ -1510,5 +1510,5 @@ html, body {
 
 /* Поднять номер РНОКПП в Платнике */
 .platnik .number.kpp_id {
-    margin-top: 16px !important;   /* можешь 5–15 */
+    margin-top: 20px !important;   /* можешь 5–15 */
 }
