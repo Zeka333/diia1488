@@ -1505,10 +1505,10 @@ html, body {
 
 /* Поднять зелёную линию в Платнике */
 .platnik .line.marquee {
-    margin-top: 12px !important;   /* подбери: 8 / 10 / 12 / 15 */
+    margin-top: 10px !important;   /* подбери: 8 / 10 / 12 / 15 */
 }
 
 /* Поднять номер РНОКПП в Платнике */
 .platnik .number.kpp_id {
-    margin-top: 10px !important;   /* можешь 5–15 */
+    margin-top: 6px !important;   /* можешь 5–15 */
 }
