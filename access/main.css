@@ -1492,3 +1492,8 @@ html, body {
     height: 430px !important;     /* общая высота */
     min-height: 430px !important; /* чтобы не прыгало от содержимого */
 }
+
+/* Поднимаем зелёную линию в паспорте максимально точно */
+.pssprt.passport .content.front > .line.marquee {
+    margin-top: 8px !important;  /* подбери: 0 / 5 / 8 / 10 / 12 */
+}
