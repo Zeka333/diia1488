@@ -1512,3 +1512,17 @@ html, body {
 .platnik .number.kpp_id {
     margin-top: 20px !important;   /* можешь 5–15 */
 }
+
+/* Опустить нижнюю чёрную панель */
+.footer {
+    position: fixed !important;
+    bottom: -6px !important; /* можешь увеличить: -8px / -10px / -12px */
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+/* Иконки в меню опустить вниз */
+.footer .icon {
+    padding-top: 6px !important;   /* подбери 4 / 6 / 8 px */
+}
